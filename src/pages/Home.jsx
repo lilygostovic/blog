@@ -12,7 +12,7 @@ import pic from '../images/homeMain.jpg'
 const Main = styled.div`
     font-family: 'Lora', serif;
     text-align: center;
-    width = 100%;
+    width: 100%;
 `;
 const Header = styled.h1`
     color: white;
