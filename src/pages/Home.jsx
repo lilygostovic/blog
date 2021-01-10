@@ -79,7 +79,7 @@ const Home = () => {
         <Container>
           <MainPic src={pic} />
         </Container>
-        <Header>Lily's Diaries</Header>
+        <Header>Lilith's Diaries</Header>
       </Center>
 
       {/* Everything else  */}
