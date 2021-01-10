@@ -1,0 +1,74 @@
+[
+    {
+        "title": "earth is heaven",
+        "date": "May 19, 2020",
+        "subtitle": "Note to self: never, ever take travelling for granted again...",
+        "link": "https://www.youtube.com/watch?v=snOlr0B1P8o&feature=emb_title",
+        
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/snOlr0B1P8o",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    },
+    {
+        "title": "BIG COTTY PT 2",
+        "date": "February 19, 2019",
+        "subtitle": "For the second year in a row, the big cotty kicked off the summer in the BEST way possible. Here are some of the memories...",
+        "link": "https://youtu.be/kfCjL1jRYEs",
+
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/kfCjL1jRYEs",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    },
+    {
+        "title": "TREM(blant)",
+        "date": "February 19, 2019",
+        "subtitle": "krazy weekend ontario schools went OFF",
+        "link": "https://www.youtube.com/watch?v=QcV6OrInmDY&feature=youtu.be",
+
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/QcV6OrInmDY",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    },
+    {
+        "title": "les vosges | 2018",
+        "date": "February 19, 2019",
+        "subtitle": "Finally reunited with my second family after four months apart!!!",
+        "link": "https://youtu.be/WSWFouBTFuk",
+
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/WSWFouBTFuk",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    },
+    {
+        "title": "the big cotty",
+        "date": "July 9, 2018",
+        "subtitle": "A weekend at big J's cotty full of electric love.",
+        "link": "https://youtu.be/ffvuE_xW5eY",
+
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/ffvuE_xW5eY",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    },
+    {
+        "title": "Out West | Summer '17",
+        "date": "April 7, 2018",
+        "subtitle": "A two-week road trip from Calgary, AB to Vancouver, BC in three minutes and 51 seconds.",
+        "link": "https://www.youtube.com/watch?v=YS1l3Pxj5xY&feature=emb_title",
+
+        "width": "560",
+        "height": "315",
+        "src": "https://www.youtube.com/embed/YS1l3Pxj5xY",
+        "frameborder": "0",
+        "allow": "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    }
+]
