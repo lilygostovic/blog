@@ -6,166 +6,157 @@ import BackToTop from '../sections/BackToTop';
 import Spacing from '../sections/Spacing';
 import articles from '../data/articles.json';
 
-
 const Main = styled.div`
-    font-family: 'Lora', serif;
+  font-family: 'Lora', serif;
 `;
 const Header = styled.h1`
-    color: black;
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 20px 20% 20px 20%;
-    /* top right bottom left */
+  color: black;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 20px 20% 20px 20%;
+  /* top right bottom left */
 `;
 const Center = styled.div`
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 `;
 const Container = styled.div`
-    opacity: 0.9;
-    height: 350px;
-    width: 900px;
-    margin: auto;
+  opacity: 0.9;
+  height: 350px;
+  width: 900px;
+  margin: auto;
 `;
 const MainPic = styled.img`
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 `;
 const Greeting = styled.p`
-    color: #c6708c;
-    margin: 50px 25% 75px 25%;
-    text-align: center;
-    line-height: 1.5;
+  color: #c6708c;
+  margin: 50px 25% 75px 25%;
+  text-align: center;
+  line-height: 1.5;
 `;
 const Text = styled.p`
-    margin: 50px 17%;
-    line-height: 2;
+  margin: 50px 23%;
+  line-height: 2;
 `;
 const TextLine = styled.p`
-    line-height: 2;
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
+  line-height: 2;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
 `;
 const Category = styled.p`
-font-size: 15px;
-text-transform: uppercase;
-color: #c6708c;
-text-decoration: none;
-text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #c6708c;
+  text-decoration: none;
+  text-align: center;
 
-padding: 15px;
-margin: 100px 0px 0px 0px;
+  padding: 15px;
+  margin: 100px 0px 0px 0px;
 
-&:hover {
+  &:hover {
     color: black;
-}
+  }
 `;
 const CatLink = styled(Link)`
-    text-decoration: none;
-    display: inline-block;
+  text-decoration: none;
+  display: inline-block;
 `;
 const Top = styled.div`
-    display: inline-block;
-    margin: 0px 0px 20px 0px;
+  display: inline-block;
+  margin: 0px 0px 20px 0px;
 `;
 const Date = styled.p`
-    font-size: 13px;
-    color: #989898;
-    text-decoration: none;
-    margin: 0;
-    padding: 15px;
-    display: inline-block;
-    text-transform: uppercase;
+  font-size: 13px;
+  color: #989898;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px;
+  display: inline-block;
+  text-transform: uppercase;
 `;
 const MyLink = styled(Link)`
-    text-decoration: none;
-    color: #c6708c;
-    &:hover {
-        color:  #989898;
-    }
+  text-decoration: none;
+  color: #c6708c;
+  &:hover {
+    color: #989898;
+  }
 `;
 const FromLily = styled.p`
-    color: #989898;
-    font-size: 13px;
-    display: inline-block;
-    text-transform: uppercase;
+  color: #989898;
+  font-size: 13px;
+  display: inline-block;
+  text-transform: uppercase;
 `;
 const Line = styled.hr`
-    border-top: 0.5px solid black;
-    width: 17%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+  border-top: 0.5px solid black;
+  width: 17%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const BlogPost = ({ match }) => {
-    window.scrollTo(0, 0);
-    
-    //getting id from the path
-    const id = match.params.id;
+  window.scrollTo(0, 0);
 
-    //finding article by id
-    const article = articles.find(article => article.id === id); //callback function
+  //getting id from the path
+  const id = match.params.id;
 
-    //default page in case of error
-    if (!article) {
-        return <div>Not Found...</div>;
-    }
+  //finding article by id
+  const article = articles.find((article) => article.id === id); //callback function
 
-    const paragraphs = article.text.split('|');
+  //default page in case of error
+  if (!article) {
+    return <div>Not Found...</div>;
+  }
 
-    return (
-        <Main>
-            <Nav></Nav>
+  const paragraphs = article.text.split('|');
 
-            <Center>
-                <CatLink to={`/${article.category}`}><Category>{article.category}</Category></CatLink>
-                <Header>{article.title}</Header>
+  return (
+    <Main>
+      <Nav></Nav>
 
-                <Top>
-                    <Line></Line>
-                    <Date>{article.date}</Date>
-                    <FromLily>
-                        From <MyLink to={`/`}>Lily's Diaries</MyLink>
-                    </FromLily>
-                </Top>
-                
-                <Container>
-                    <MainPic src={article.fullIMG} />
-                </Container>
+      <Center>
+        <CatLink to={`/${article.category}`}>
+          <Category>{article.category}</Category>
+        </CatLink>
+        <Header>{article.title}</Header>
 
-                <Greeting>{article.subtitle}</Greeting>
-            </Center>
+        <Top>
+          <Line></Line>
+          <Date>{article.date}</Date>
+          <FromLily>
+            From <MyLink to={`/`}>Lily's Diaries</MyLink>
+          </FromLily>
+        </Top>
 
-            
+        <Container>
+          <MainPic src={article.fullIMG} />
+        </Container>
 
-            {paragraphs.map(paragraph => {
-                const lines = paragraph.split("\n");
-                return (
-                    <Text>
-                        {
-                            lines.map(line => {
-                                return (
-                                    <TextLine>
-                                        {line}
-                                    </TextLine>
-                                )
-                            })
-                        }
-                    </Text>)
+        <Greeting>{article.subtitle}</Greeting>
+      </Center>
 
-            }
-            )}
+      {paragraphs.map((paragraph) => {
+        const lines = paragraph.split('\n');
+        return (
+          <Text>
+            {lines.map((line) => {
+              return <TextLine>{line}</TextLine>;
+            })}
+          </Text>
+        );
+      })}
 
-            <BackToTop/>
+      <BackToTop />
 
-            <Spacing/>
-        </Main >
-    );
+      <Spacing />
+    </Main>
+  );
 };
 
 export default BlogPost;

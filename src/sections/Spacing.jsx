@@ -8,14 +8,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Main = styled.div`
-    margin-top: 200px;
-
+  margin-top: 200px;
 `;
 
 const Spacing = () => {
-    return (
-        <Main></Main >
-    );
+  return <Main></Main>;
 };
 
 export default Spacing;

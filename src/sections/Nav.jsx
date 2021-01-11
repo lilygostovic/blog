@@ -96,7 +96,7 @@ const Nav = () => {
   //checking the current path to see if on a page in nav
   const isHome = useRouteMatch({ path: '/', exact: true });
   const isTravel = useRouteMatch({ path: '/travel', exact: true });
-  const isLive = useRouteMatch({ path: '/live', exact: true });
+  const isWrite = useRouteMatch({ path: '/write', exact: true });
   const isPhotography = useRouteMatch({ path: '/photography', exact: true });
   const isFilm = useRouteMatch({ path: '/film', exact: true });
   const isVideo = useRouteMatch({ path: '/video', exact: true });
@@ -119,8 +119,8 @@ const Nav = () => {
           </MenuOption>
 
           <MenuOption>
-            <MyLink className={isLive ? 'active' : ''} to="/live">
-              Live
+            <MyLink className={isWrite ? 'active' : ''} to="/write">
+              Write
             </MyLink>
           </MenuOption>
 

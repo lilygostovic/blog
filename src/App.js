@@ -5,7 +5,7 @@ import './App.css';
 // importing components
 import Home from './pages/Home';
 import Travel from './pages/Travel';
-import Live from './pages/Live';
+import Write from './pages/Write';
 import Photography from './pages/Photography';
 import Film from './pages/Film';
 import Video from './pages/Video';
@@ -23,7 +23,7 @@ function App() {
 
         <Route path="/travel" component={Travel}/>
 
-        <Route path="/live" component={Live}/>
+        <Route path="/write" component={Write}/>
 
         <Route path="/photography" component={Photography}/>
 

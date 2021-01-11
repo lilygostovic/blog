@@ -88,29 +88,31 @@ const Home = () => {
         <Left>
           {/* Pink Greeting text */}
           <Greeting>
-            My name is Lily Gostovic. I am the seventeen year old girl from
-            Toronto. I am also the very happy, very hyper, and very energetic
-            blurry girl at an AJR concert with her tongue out in the above
-            picture.
+            My name is Lily Gostovic. I am an eighteen year old girl from
+            Toronto who loves skiing, making clothes, and electronic music. I am
+            currently living in Montreal completing my bachelor of Arts in
+            computer science at McGill University. Welcome to my life.
           </Greeting>
 
           {/* Longer black text */}
           <Text>
             Whether you know me or not, you have somehow managed to make it to
-            my blog. I guess I will start by telling you a little about myself
+            my "blog". I guess I will start by telling you a little about myself
             since you may be about to read what I like to think of as my little
             online diary. As you’ve probably managed to figure out by now, my
-            name is Lily and I am a seventeen year old girl from Toronto. I
-            spent all of my seventeen years in this world living in the same
-            house in Toronto with my mother, father, and brother who despite
-            being significantly taller than me, is two and a half year younger
-            than me. I am a senior in high school and am heading to McGill
-            University next year to complete a Bachelor of Arts degree. I am
-            quite unsure of what the future holds for me in regards to a career
-            path, and pretty much everything else as well. I started this blog
-            while in quarantine to give my thoughts, pictures, and writing
-            pieces a little home to live. Here are the innermost thoughts and
-            opinions of the mind of Lily Gostovic. Enjoy.
+            name is Lily and I am an eighteen year old girl from Toronto. I
+            spent all of my eighteen years in this world living in the same
+            house in Toronto with my mom, dad, and brother who despite being
+            significantly taller than me, is two and a half year younger than
+            me. I am a freshman at McGill University on the road to completing a
+            Bachelor of Arts in computer science. I started this blog while in
+            quarantine to give my thoughts, pictures, and writing pieces a
+            little home to live, as well as learn how to develop and deploy a
+            website from start to finish. A mini passion project that budded
+            from boredom while being forced to stay home has now taught me the
+            basics of web design and most of what I know about HTML, CSS, and
+            Javascript. Keep scrolling to read some of my thoughts and opinions,
+            or see some pictures of my life, raw and unedited. Enjoy.
           </Text>
 
           {/* imported component under sections */}
