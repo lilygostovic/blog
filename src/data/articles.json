@@ -185,7 +185,7 @@
     {
         "category": "photography",
         "order": 3,
-        "id": "hike-near-monflanquin-france",
+        "id": "monflanquin-france",
         "title": "Monflanquin, France",
         "date": "August 9, 2018",
         "subtitle": "A hike full of goats, blood thirsty dogs, and twelve tourists.",
@@ -196,8 +196,8 @@
     {
         "category": "photography",
         "order": 2,
-        "id": "bordeaux-france",
-        "title": "Bordeaux, France",
+        "id": "bourdeau-france",
+        "title": "Bourdeau, France",
         "date": "August 3, 2018",
         "subtitle": "My first taste of France in a while. Just as beautiful as ever.",
         "coverIMG": "https://im.vsco.co/aws-us-west-2/85c18a/23361141/5b7eb3c90c804d5b9f36cff0/vsco5b7eb3d6174a3.jpg?w=600&c=1&dpr=1",
