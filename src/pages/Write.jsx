@@ -20,8 +20,8 @@ const Live = () => {
       <GeneralContent
         title="Write"
         fullIMG={mainIMG}
-        subtitle="Life is beautiful. Life is extraordinary. Life is all around us."
-        mainText="Might think of making this a component like nav... will be the same layout for global, skiing, gallery, film, and music pages. Links to all the other blog posts I have written about moving. All links should have a photo cover with a cute name. Possibly center this, decide once there is more actual content here."
+        subtitle="'The true alchemists do not change lead into gold; they change the world into words.' - William H. Gass"
+        mainText="I have never thought of myself as much of a writer. Writing is difficult. It takes focus and dedication to finish a piece of writing that you are proud of and happy with. Although I have always found writing particularly challenging, I have always appreciated the sense of accomplishment I feel after finishing an essay I am proud of. Instead of letting my essays die once they have been graded by my professors, I have listed some of my favourites below to prolong their lives a little longer."
       ></GeneralContent>
 
       <BlogDisplay category="write"></BlogDisplay>

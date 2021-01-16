@@ -120,8 +120,8 @@ const Video = () => {
       <GeneralContent
         title="Video"
         fullIMG={mainIMG}
-        subtitle="SOMEthing super artsy abaout how videos transport you to or back to a point in your life or the life of somebody else to better remember and reminise about the good times you had."
-        mainText="What making videos means to me and why I love making them and spend so much time and effort on them. maybe a little about how i used to use that super cool program but now only use imovie but how it still works because imovie actually has a lot of cool features you can use if you know it and try a bunch of differen things!"
+        subtitle="Videos have the power to transport you to a certain time, place, or memory. Stimulating the auditory and visual receptors, videos can be overwhelming, all-encompassing, and bring out emotions you may not have previously known existed."
+        mainText="Like many other avid instagram users, I have been obsessed with watching beautiful travel montages ever since one of Jay Alvarez's videos appeared on my explore page. I love watching other people's creations. The really good ones can transport you briefly to another country, make you feel like you are really there, skiing in the alps, laying on a beach in Thailand or hiking up a volcano in Iceland. I would like to be able to do the same for someone one day. Unless a miracle happens and I become extremely skilled at video production, I'll continue to make videos of my vacations so I can at least transport myself back, to remember the trip and period of my life like I am really there."
       ></GeneralContent>
 
       <Group>

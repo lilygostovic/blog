@@ -128,12 +128,6 @@ const Nav = () => {
             Through A Lens {/* through a lens */}
             <Dropdown>
               <DropdownOption>
-                <MyLink className={isFilm ? 'active' : ''} to="/film">
-                  Film
-                </MyLink>
-              </DropdownOption>
-
-              <DropdownOption>
                 <MyLink className={isVideo ? 'active' : ''} to="/video">
                   Video
                 </MyLink>
@@ -148,12 +142,6 @@ const Nav = () => {
                 </MyLink>
               </DropdownOption>
             </Dropdown>
-          </MenuOption>
-
-          <MenuOption>
-            <MyLink className={isMusic ? 'active' : ''} to="/music">
-              Music
-            </MyLink>
           </MenuOption>
         </MenuUl>
 
