@@ -75,9 +75,9 @@ const Subscribe = () => {
         </Container>
 
         <Text>
-          Hi! I'm Lily Gostovic, welcome to my online diary! I am a seventeen
-          year old girl from Toronto, Canada oversharing her life on the
-          internet on her virtual diary. Enjoy!
+          Hi! I'm Lily Gostovic, welcome to my online diary! I am an eighteen
+          year old student at McGill University from Toronto, Ontario sharing
+          elements of her life on her blog. Enjoy!
         </Text>
       </Main>
     </Wrapper>
