@@ -99,6 +99,7 @@
     },
     {
         "category": "write",
+        "order": 26,
         "id": "an-uphill-fight",
         "title": "An Uphill Fight for a Seat at the Table",
         "date": "November 22, 2021",
