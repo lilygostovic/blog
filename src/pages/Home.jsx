@@ -99,7 +99,7 @@ const Home = () => {
             Whether you know me or not, you have somehow managed to make it to
             my "blog". Congrats! You're in for a treat! A little about myself: I
             am a sophomore at McGill University on the road to completing a
-            Bachelor of Arts with a mojor in computer science, and a minor in
+            Bachelor of Arts with a major in computer science, and a minor in
             linguistics. I started this blog while in quarantine to give my
             thoughts, pictures, and writing pieces a home to live, as well as to
             learn how to develop and deploy a website from start to finish. A

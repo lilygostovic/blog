@@ -76,8 +76,8 @@ const Subscribe = () => {
 
         <Text>
           Hi! I'm Lily Gostovic, welcome to my online diary! I am an eighteen
-          year old student at McGill University from Toronto, Ontario sharing
-          elements of her life on her blog. Enjoy!
+          year old student at McGill University from Toronto, Ontario learning
+          how to build a website while sharing highlights of her life, enjoy!
         </Text>
       </Main>
     </Wrapper>
