@@ -165,6 +165,15 @@ const Nav = () => {
           </MenuOption>
 
           <MenuOption>
+            <ExternalLink
+              href="https://www.instagram.com/lilygostovic/"
+              target="_blank"
+            >
+              Instagram
+            </ExternalLink>
+          </MenuOption>
+
+          <MenuOption>
             <ExternalLink href="spotify:user:lilygostovic" target="_blank">
               Spotify
             </ExternalLink>
