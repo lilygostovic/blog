@@ -148,28 +148,19 @@ const Nav = () => {
         <Socials>
           <MenuOption>
             <ExternalLink
-              href="https://www.instagram.com/lilygostovic/?hl=en"
+              href="https://github.com/lilygostovic"
               target="_blank"
             >
-              Instagram
+              GitHub
             </ExternalLink>
           </MenuOption>
 
           <MenuOption>
             <ExternalLink
-              href="https://vsco.co/lilygostovic/gallery"
+              href="https://www.linkedin.com/in/lily-gostovic-5b9243204/"
               target="_blank"
             >
-              VSCO
-            </ExternalLink>
-          </MenuOption>
-
-          <MenuOption>
-            <ExternalLink
-              href="https://www.youtube.com/channel/UClLDRg_M-3Hmr7cmaoAem_Q"
-              target="_blank"
-            >
-              YouTube
+              LinkedIn
             </ExternalLink>
           </MenuOption>
 
