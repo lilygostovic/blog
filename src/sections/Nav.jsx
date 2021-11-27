@@ -166,10 +166,10 @@ const Nav = () => {
 
           <MenuOption>
             <ExternalLink
-              href="https://www.instagram.com/lilygostovic/"
+              href="https://www.strava.com/athletes/24507964"
               target="_blank"
             >
-              Instagram
+              Strava
             </ExternalLink>
           </MenuOption>
 
