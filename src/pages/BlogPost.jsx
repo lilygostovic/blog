@@ -25,7 +25,7 @@ const Center = styled.div`
 const Container = styled.div`
   opacity: 0.9;
   height: 350px;
-  width: 900px;
+  width: 80%;
   margin: auto;
 `;
 const MainPic = styled.img`
