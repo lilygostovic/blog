@@ -3,9 +3,6 @@
  * a display of all my blogs about travel
  * some travel diaries, some bucket lists,
  * some lists of where I have been already.
- * a place to remember the details of my travels
- *
- * FINISHED
  */
 
 import React from 'react';

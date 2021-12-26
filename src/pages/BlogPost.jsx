@@ -1,3 +1,11 @@
+/*
+ * BLOG POST
+ * page displaying the contents of a blog post.
+ * has a header format followed by the body of
+ * the post, followed by a button to bring the
+ * user back to the top of the page
+ */
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';

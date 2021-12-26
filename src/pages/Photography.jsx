@@ -1,9 +1,7 @@
 /*
- * GALLERY
+ * PHOTOGRAPHY
  * a display of all my blogs about photography
- * and journals from around the world
- *
- * FINISHED
+ * and vsco journals from around the world
  */
 
 import React from 'react';

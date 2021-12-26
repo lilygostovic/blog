@@ -1,5 +1,6 @@
 /*
  * VIDEO
+ * a display of all my video montages I have created
  */
 
 import React from 'react';

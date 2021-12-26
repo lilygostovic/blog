@@ -1,3 +1,10 @@
+/*
+ * HOME
+ * the home page of the blog, has a brief intro
+ * about me followed by a display of all blog
+ * posts with a 'subscribe' section on the right
+ */
+
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';

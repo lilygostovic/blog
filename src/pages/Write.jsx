@@ -1,3 +1,10 @@
+/*
+ * WRITE
+ * a display of all my essay posts. a combination of
+ * personal essays, as well as essays and research
+ * papers written for classes
+ */
+
 import React from 'react';
 import styled, { css } from 'styled-components';
 import Nav from '../sections/Nav';
