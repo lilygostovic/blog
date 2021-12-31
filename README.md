@@ -1,4 +1,4 @@
-## TO RUN PROJECT:
+## Deploy Project
 
 Required: Nodejs (https://nodejs.org/en/download/)
 
