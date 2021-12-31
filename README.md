@@ -1,8 +1,4 @@
-TO READ CODE:
-
-    The code is in the src folder.
-
-TO RUN PROJECT:
+##TO RUN PROJECT:
 
     Required: Nodejs (https://nodejs.org/en/download/)
 
