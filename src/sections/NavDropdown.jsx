@@ -23,8 +23,8 @@ const NavBar = styled.nav`
   box-shadow: 0 2px 5px -2px rgba(240, 240, 240, 0.5);
 `;
 const MenuUl = styled.ul`
-  padding: 0px 15px;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   text-transform: lowercase;
   color: black;
 `;
@@ -32,18 +32,26 @@ const Dropdown = styled.ul`
   margin: 0;
   padding: 0;
   display: none;
-  text-align: center;
   width: 100%;
   position: absolute;
   left: 0%;
   top: 100%;
   box-shadow: 0 2px 5px -2px rgba(240, 240, 240, 0.5);
 `;
-const DropdownOption = styled.li`
+const LeftDropdownOption = styled.li`
   display: block;
   font-size: 13.5px;
   background-color: #f0f0f0;
-  padding: 12px;
+  padding: 12px 0px;
+  text-align: left;
+  color: black;
+`;
+const RightDropdownOption = styled.li`
+  display: block;
+  font-size: 13.5px;
+  background-color: #f0f0f0;
+  padding: 12px 15px;
+  text-align: right;
   color: black;
 `;
 const MyLink = styled(Link)`
@@ -51,6 +59,7 @@ const MyLink = styled(Link)`
   color: black;
   text-transform: lowercase;
   transition: all 0.5s ease;
+  padding-left: 20px;
   &.active {
     color: #c6708c;
     font-weight: 0;
@@ -61,9 +70,9 @@ const MyLink = styled(Link)`
 `;
 const Socials = styled.ul`
   display: inline;
+  margin: 0px;
+  padding: 0px 0px;
   text-align: right;
-  margin: 0;
-  padding: 0px 15px;
 `;
 const ExternalLink = styled.a`
   color: black;
@@ -75,11 +84,28 @@ const ExternalLink = styled.a`
     color: #c6708c;
   }
 `;
-const MenuOption = styled.li`
+const LeftMenuOption = styled.li`
   width: 60px;
   display: inline-block;
-  margin: 0px 5px;
-  padding: 20px 15px;
+  margin: 0px 0px;
+  padding: 20px 27px 20px 20px;
+  font-size: 13.5px;
+  transition: all 0.5s ease;
+  position: relative;
+
+  &:hover {
+    color: #c6708c;
+    font-weight: 0;
+    ${Dropdown} {
+      display: block;
+    }
+  }
+`;
+const RightMenuOption = styled.li`
+  width: 60px;
+  display: inline-block;
+  margin: 0px 0px;
+  padding: 20px 20px 20px 27px;
   font-size: 13.5px;
   transition: all 0.5s ease;
   position: relative;
@@ -105,68 +131,68 @@ const NavDropdown = ({ className }) => {
     <Main className={className}>
       <NavBar>
         <MenuUl>
-          <MenuOption>
+          <LeftMenuOption>
             menu
             <Dropdown>
-              <DropdownOption>
+              <LeftDropdownOption>
                 <MyLink className={isTravel ? 'active' : ''} to="/travel">
                   Travel
                 </MyLink>
-              </DropdownOption>
+              </LeftDropdownOption>
 
-              <DropdownOption>
+              <LeftDropdownOption>
                 <MyLink className={isWrite ? 'active' : ''} to="/write">
                   Write
                 </MyLink>
-              </DropdownOption>
+              </LeftDropdownOption>
 
-              <DropdownOption>
+              <LeftDropdownOption>
                 <MyLink className={isVideo ? 'active' : ''} to="/video">
                   Video
                 </MyLink>
-              </DropdownOption>
+              </LeftDropdownOption>
 
-              <DropdownOption>
+              <LeftDropdownOption>
                 <MyLink
                   className={isPhotography ? 'active' : ''}
                   to="/photography"
                 >
                   Photography
                 </MyLink>
-              </DropdownOption>
+              </LeftDropdownOption>
             </Dropdown>
-          </MenuOption>
+          </LeftMenuOption>
         </MenuUl>
 
         <Socials>
-          <MenuOption>
+          <RightMenuOption>
             socials
             <Dropdown>
-              <DropdownOption>
+              <RightDropdownOption>
                 <ExternalLink
                   href="https://www.instagram.com/lilygostovic/"
                   target="_blank"
                 >
                   Instagram
                 </ExternalLink>
-              </DropdownOption>
+              </RightDropdownOption>
 
-              <DropdownOption>
+              <RightDropdownOption>
                 <ExternalLink
                   href="https://www.strava.com/athletes/24507964"
                   target="_blank"
                 >
                   Strava
                 </ExternalLink>
-              </DropdownOption>
+              </RightDropdownOption>
 
-              <DropdownOption>
+              <RightDropdownOption>
                 <ExternalLink href="spotify:user:lilygostovic" target="_blank">
                   Spotify
                 </ExternalLink>
-              </DropdownOption>
+              </RightDropdownOption>
             </Dropdown>
-          </MenuOption>
+          </RightMenuOption>
         </Socials>
 
         {/* <MenuUl>
