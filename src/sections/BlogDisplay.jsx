@@ -4,7 +4,7 @@
  * each has a cover photo and cute name
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import articles from '../data/articles.json';
@@ -129,12 +129,50 @@ const Break = styled.hr`
 const Group = styled.div`
   width: 100%;
 `;
+const ViewMoreButton = styled.button`
+  display: inline-block;
+
+  padding: 15px;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: #f8f8f8;
+  outline: 1px solid #f4f4f4;
+  font-family: 'Lora', sans-serif;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-size: 12px;
+  color: #c6708c;
+  &:hover {
+    color: black;
+  }
+  transition: all 0.5s ease;
+`;
+const BottomLine = styled.hr`
+  display: inline-block;
+  width: 330px;
+  border: 0;
+  margin: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+`;
 
 const BlogDisplay = ({ category }) => {
+  const [count, setCount] = useState(5);
+
+  const clickHandler = () => {
+    if (count < articles.length) {
+      setCount(count + 3);
+    }
+  };
+
   var sortedArticles = [...articles].sort((a, b) => b.order - a.order);
 
   if (category === 'the latest') {
-    sortedArticles = sortedArticles.slice(0, 6);
+    sortedArticles = sortedArticles.slice(0, count);
   } else {
     sortedArticles = sortedArticles.filter(
       (article) => article.category === category
@@ -243,6 +281,18 @@ const BlogDisplay = ({ category }) => {
           );
         }
       })}
+
+      {count < articles.length ? (
+        <div>
+          <BottomLine />
+          <ViewMoreButton onClick={clickHandler}>More</ViewMoreButton>
+          <BottomLine />
+        </div>
+      ) : (
+        <div />
+      )}
+
+      {/* View more button below all posts */}
     </Main>
   );
 };
