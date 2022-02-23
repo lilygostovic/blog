@@ -14,7 +14,7 @@ const Main = styled.div`
   /* STICKY */
   position: sticky;
   position: -webkit-sticky;
-  top: 25px; /* or 125 px */
+  top: 100px; /* or 125 px */
   justify-content: center;
   align-items: center;
   box-shadow: 0px 10px 200px -5px #f0f0f0;
@@ -22,7 +22,7 @@ const Main = styled.div`
   font-family: 'Lora', serif;
   margin-top: 25 px;
   margin-left: 50px;
-  width: 60%;
+  width: 250px;
   /* outline: 2px solid #f4f4f4; */
 `;
 const Title = styled.h1`
