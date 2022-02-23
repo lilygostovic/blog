@@ -9,7 +9,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import Nav from '../sections/Nav';
+
+import NH from '../sections/NavHeader';
+import ND from '../sections/NavDropdown';
 import BackToTop from '../sections/BackToTop';
 import Spacing from '../sections/Spacing';
 import articles from '../data/articles.json';
@@ -48,7 +50,7 @@ const Greeting = styled.p`
   line-height: 1.5;
 `;
 const Text = styled.p`
-  margin: 50px 23%;
+  margin: 50px 23%; //10%
   line-height: 2;
 `;
 const TextLine = styled.p`
@@ -107,6 +109,16 @@ const Line = styled.hr`
   margin-top: 20px;
   margin-bottom: 20px;
 `;
+const NavHeader = styled(NH)`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+const NavDropdown = styled(ND)`
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
 
 const BlogPost = ({ match }) => {
   window.scrollTo(0, 0);
@@ -126,7 +138,9 @@ const BlogPost = ({ match }) => {
 
   return (
     <Main>
-      <Nav></Nav>
+      {/* Navigation Bars, only one shows depending on width of webpage */}
+      <NavHeader />
+      <NavDropdown />
 
       <Center>
         <CatLink to={`/${article.category}`}>
