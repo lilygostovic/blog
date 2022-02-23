@@ -1,13 +1,9 @@
-TO READ CODE:
+## Deploy Project
 
-    The code is in the src folder.
+Required: Nodejs (https://nodejs.org/en/download/)
 
-TO RUN PROJECT:
+To install dependencies: `npm install`
 
-    Required: Nodejs (https://nodejs.org/en/download/)
+To start server: `npm start`
 
-    To install dependencies: `npm install`
-
-    To start server: `npm start`
-
-    To deploy app: `npm run deploy`
+To deploy app: `npm run deploy`
