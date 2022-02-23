@@ -34,12 +34,12 @@ const CoverPhoto = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 `;
 const Article = styled.div`
-  padding: 10px;
+  padding: 3%;
   height: 100%; /* 315 */
-  width: 709.5px; /* 560 */
+  width: 100%; /* 560 */
   /* margin: 50px; */
   text-align: center;
   align-content: center;
@@ -79,8 +79,8 @@ const Line = styled.hr`
   width: 5%;
 `;
 const Container = styled.div`
-  width: 700px;
-  height: 393.75px;
+  width: 95%;
+  height: 390px;
   overflow: hidden;
   margin: auto;
 `;
@@ -91,7 +91,7 @@ const Category = styled.p`
   text-decoration: none;
   text-align: center;
 
-  padding: 15px;
+  padding: 2.5%;
   margin: 0;
 
   &:hover {
@@ -100,14 +100,52 @@ const Category = styled.p`
 `;
 const Top = styled.div`
   display: inline-block;
-  margin: 5px 0px 15px 0px;
+  margin: 1% 0px 3% 0px;
 `;
 const CatLink = styled(Link)`
+  padding: 15px;
   text-decoration: none;
   display: inline-block;
 `;
 const Block = styled.div`
-  margin: 75px;
+  margin: 50px 9.5%;
+  width: 40%;
+  height: 600px;
+
+  @media (max-width: 1300px) {
+    width: 45%;
+  }
+  @media (max-width: 1200px) {
+    width: 50%;
+  }
+  @media (max-width: 1100px) {
+    width: 55%;
+  }
+  @media (max-width: 1000px) {
+    width: 60%;
+  }
+  @media (max-width: 900px) {
+    width: 65%;
+  }
+  @media (max-width: 800px) {
+    width: 70%;
+  }
+  @media (max-width: 700px) {
+    width: 75%;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 85%;
+  }
+  @media (max-width: 400px) {
+    width: 90%;
+  }
+
+  /* @media (max-width: 500px) {
+    margin: 0;
+  } */
 `;
 const Header = styled.h2`
   margin: 0px;
