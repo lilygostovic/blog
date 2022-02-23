@@ -13,7 +13,6 @@ import NH from '../sections/NavHeader';
 import ND from '../sections/NavDropdown';
 import BlogDisplay from '../sections/BlogDisplay';
 import Sub from '../sections/Subscribe';
-import BackToTop from '../sections/BackToTop';
 import Spacing from '../sections/Spacing';
 import pic from '../images/homeMain.jpg';
 
@@ -130,14 +129,9 @@ const Home = () => {
 
           {/* imported component under sections */}
           <BlogDisplay category="the latest"></BlogDisplay>
-
-          {/* Back to top button at the bottom of the page */}
-          {/* imported component under sections */}
-          <BackToTop />
         </Left>
 
-        {/* About me section on the right side of the page */}
-        {/* imported component under sections */}
+        {/* Subscribe section on the right side of the page */}
         <Subscribe />
       </All>
 
