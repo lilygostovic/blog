@@ -6,7 +6,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import Nav from '../sections/Nav';
+
+import NH from '../sections/NavHeader';
+import ND from '../sections/NavDropdown';
 import GeneralContent from '../sections/GeneralContent';
 import BackToTop from '../sections/BackToTop';
 import Spacing from '../sections/Spacing';
@@ -111,12 +113,24 @@ const BottomLine = styled.hr`
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 `;
+const NavHeader = styled(NH)`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+const NavDropdown = styled(ND)`
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
 
 const Video = () => {
   window.scrollTo(0, 0);
   return (
     <Main>
-      <Nav></Nav>
+      {/* Navigation Bars, only one shows depending on width of webpage */}
+      <NavHeader />
+      <NavDropdown />
 
       <GeneralContent
         title="Video"

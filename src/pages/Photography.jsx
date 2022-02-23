@@ -6,7 +6,9 @@
 
 import React from 'react';
 import styled, { css } from 'styled-components';
-import Nav from '../sections/Nav';
+
+import NH from '../sections/NavHeader';
+import ND from '../sections/NavDropdown';
 import GeneralContent from '../sections/GeneralContent';
 import BlogDisplay from '../sections/BlogDisplay';
 import BackToTop from '../sections/BackToTop';
@@ -16,12 +18,24 @@ import mainIMG from '../images/galleryMain.jpg';
 const Main = styled.div`
   font-family: 'Lora', serif;
 `;
+const NavHeader = styled(NH)`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+const NavDropdown = styled(ND)`
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
 
 const Gallery = () => {
   window.scrollTo(0, 0);
   return (
     <Main>
-      <Nav></Nav>
+      {/* Navigation Bars, only one shows depending on width of webpage */}
+      <NavHeader />
+      <NavDropdown />
 
       <GeneralContent
         title="Photography"

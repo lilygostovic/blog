@@ -2,14 +2,15 @@
  * HOME
  * the home page of the blog, has a brief intro
  * about me followed by a display of all blog
- * posts with a 'subscribe' section on the right
+ * posts with a 'subscribe' section on the
  */
 
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import Nav from '../sections/Nav';
+import NH from '../sections/NavHeader';
+import ND from '../sections/NavDropdown';
 import BlogDisplay from '../sections/BlogDisplay';
 import Sub from '../sections/Subscribe';
 import BackToTop from '../sections/BackToTop';
@@ -72,14 +73,24 @@ const Subscribe = styled(Sub)`
   width: 20%;
   margin: 0px;
 `;
+const NavHeader = styled(NH)`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+const NavDropdown = styled(ND)`
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
 
 const Home = () => {
   window.scrollTo(0, 0);
   return (
     <Main>
-      {/* Navigation Bar */}
-      {/* imported component under sections */}
-      <Nav />
+      {/* Navigation Bars, only one shows depending on width of webpage */}
+      <NavHeader />
+      <NavDropdown />
 
       {/* Picture and Title */}
       <Center>
