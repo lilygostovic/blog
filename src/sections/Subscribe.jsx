@@ -14,15 +14,15 @@ const Main = styled.div`
   /* STICKY */
   position: sticky;
   position: -webkit-sticky;
-  top: 85px; /* or 125 px */
+  top: 25px; /* or 125 px */
   justify-content: center;
   align-items: center;
   box-shadow: 0px 10px 200px -5px #f0f0f0;
 
   font-family: 'Lora', serif;
-  margin-top: 100px;
+  margin-top: 25 px;
   margin-left: 50px;
-  width: 250px;
+  width: 60%;
   /* outline: 2px solid #f4f4f4; */
 `;
 const Title = styled.h1`
@@ -75,7 +75,7 @@ const Subscribe = () => {
         </Container>
 
         <Text>
-          Hi! I'm Lily Gostovic, welcome to my online diary! I am an eighteen
+          Hi! I'm Lily Gostovic, welcome to my online diary! I am a nineteen
           year old student at McGill University from Toronto, Ontario learning
           how to build a website while sharing highlights of her life, enjoy!
         </Text>
